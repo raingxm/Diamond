@@ -11,9 +11,14 @@ public class Main {
         }
     }
 
-    public static void printReverseTriangle(int n) {
+    public static void printDiamond(int n) {
+        printIsoscelesTriangle(n);
+        printReverseTriangle(n-1, 1);
+    }
+
+    private static void printReverseTriangle(int n, int space) {
         for(int i=0; i<n; i++) {
-            printSpace(i);
+            printSpace(i+space);
             printAsterisk(2*n -2*i - 1);
             printSpace(i);
             System.out.println();
@@ -34,6 +39,6 @@ public class Main {
 
     public static void main(String[] args) {
         //printIsoscelesTriangle(3);
-        printReverseTriangle(3);
+        printDiamond(3);
     }
 }
