@@ -2,7 +2,7 @@ package com.raingxm;
 
 public class Main {
 
-    public static void printDiamond(int n) {
+    public static void printIsoscelesTriangle(int n) {
         for(int i=1; i<=n; i++) {
             printSpace(n-i);
             printAsterisk(2*i - 1);
@@ -24,6 +24,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        printDiamond(3);
+        printIsoscelesTriangle(3);
     }
 }
